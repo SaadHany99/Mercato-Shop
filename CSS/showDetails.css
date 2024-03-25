@@ -1,0 +1,19 @@
+nav{
+    background-color: #030637;
+    border-radius: 10px;
+    
+}
+li:hover{
+background-color: rgb(238, 163, 157);
+border-radius: 50px;
+}
+.logoimage{
+    width: 100px;
+    height: 100px;
+}
+
+/* footer */
+.aboutimage2 {
+    width: 270px;
+    height: 270px;
+  }

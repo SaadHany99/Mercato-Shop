@@ -1,0 +1,47 @@
+nav{
+    background-color: #030637;
+    border-radius: 10px;
+    
+}
+li:hover{
+background-color: rgb(238, 163, 157);
+border-radius: 50px;
+}
+.logoimage{
+    width: 100px;
+    height: 100px;
+}
+.aboutcontnr{
+    background-color: #eeceda;
+    /* width: 1100px; */
+    height: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.AboutText{
+    
+    text-align: justify;
+    padding: 10px;
+    width: 600px;
+    font-family: Andalus;
+    font-size: large;
+}
+.immage{
+    padding: 20px;
+}
+.img{
+    width: 400px; 
+}
+@media screen and (max-width: 610px) {
+   .aboutcontnr{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .AboutText{
+    width: 50vh;
+   }
+   .img{
+    width: 200px;
+   }
+  }

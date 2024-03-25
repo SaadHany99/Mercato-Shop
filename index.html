@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Mercato Shop</title>
+</head>
+<body>
+    <!-- Nav Bar / WebSite Header  -->
+    <!-- <div> -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+          <img src="./Images/mercato-Logo.png" class="logoimage">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link active text-white fa-bounce" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link text-white fa-bounce" href="about.html">About</a>
+              </li>
+              <li class="nav-item mx-lg-3">
+                <a class="nav-link text-white fa-bounce" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown mx-lg-3">
+                <a class="nav-link dropdown-toggle text-white fa-bounce" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Category
+                </a>
+                <ul class="dropdown-menu slidemenu">
+                  <li><a class="dropdown-item slideitem" data-category="Clothes" href="#largerdiv">Clothes</a></li>
+                  <li><a class="dropdown-item slideitem" data-category="Foods" href="#largerdiv">Foods</a></li>
+                  <li><a class="dropdown-item slideitem" data-category="Drinks" href="#largerdiv">Drinks</a></li>
+
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item slideitem" data-category="all" href="#largerdiv">All Categories</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="cartshop my-4 me-auto ">
+              <a href="/cart.html" class="fs-2 fa-shake "><i class="fa-solid fa-shake fa-cart-shopping " style="color: rgb(197, 97, 90);"></i></a>
+              <span class="cc" style="color: #030637;">3</span>
+            </div>
+            
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-danger fa-bounce mx-2"style="--fa-animation-duration: 1s;" type="submit">LogIn</button>
+              <button class="btn btn-danger fa-bounce mx-2"style="--fa-animation-duration: 1s;" type="submit">SignUp</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- </div> -->
+    <!-- End Of Nav Bar / WebSite Header -->
+
+    <!-- Start Of Slider -->
+    <div class="slider">
+      <img src="./Images/pic3.jpeg"class="active">
+      <!-- <img src="./Images/pic4.jpeg">
+      <img src="./Images/pic5.jpeg">
+      <img src="./Images/pic6.jpeg">
+      <img src="./Images/pic2.jpeg"> -->
+
+      <div class="buttons">
+        <!-- <i class="fa-solid fa-caret-right" style="color: #870870;"></i> -->
+        <span class="left">
+          <i class="fa-solid fa-circle-left fs-1" style="color: rgb(197, 97, 90);"></i>
+        </span>
+        <span class="right">
+          <i class="fa-solid fa-circle-right fs-1" style="color: rgb(197, 97, 90);"></i>
+        </span>
+      </div>
+      
+    </div>
+    <!-- End Of Slider -->
+    
+<!-- Start Of Cards Section -->
+<!-- Div Category -->
+<div class="choose d-flex flex-wrap justify-content-center p-3">
+  <div class="collection ">
+    <button class="btn btn-danger mx-2 categbtn" data-category="Drinks">Drinks</button>
+    <button class="btn btn-danger mx-2 categbtn" data-category="Clothes">Clothes</button>
+    <button class="btn btn-danger mx-2 categbtn" data-category="Foods">Foods</button>
+    <button class="btn btn-danger mx-2 categbtn" data-category="all">All</button>
+  </div>
+</div>    
+<!-- End Of Category Div -->
+<div class="cardcont d-flex flex-wrap gap-5 justify-content-center p-5" id="largerdiv" data-category="all">
+
+  <div class="card carddiv" data-category="Clothes" style="width: 18rem;">
+    <img src="./Images/cloth1-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="Astorya T-Shirt"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Astorya T-Shirt</h5>
+      <h6 class="card-title price">
+        <span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">50$</span>
+        <span style="color:green;font-size: larger;--fa-animation-duration: 2s;" class="fa-fade newprice">30$</span>
+      </h6>
+      <p class="card-text d-none para">Astorya T-Shirt is a wonderful and unique design for a modern T-shirt that matches international fashion and is one of the Turkish products.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Drinks" style="width: 18rem;">
+    <img src="./Images/milkshake-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="Milkshake"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">MilkShake</h5>
+      <h6 class="card-title price">
+        <span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">25$</span>
+        <span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">20$</span>
+      </h6>
+      <p class="card-text d-none para">A milkshake is a sweet, cold beverage that is usually made from milk, ice cream, or iced milk, and flavorings or sweeteners such as butterscotch, caramel sauce, chocolate syrup, or fruit syrup.It can also be made by adding powder into fresh milk and stirring the powder into the milk.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Foods" style="width: 18rem;">
+    <img src="./Images/pizza-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="pizza"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Pizza</h5>
+      <h6 class="card-title price">
+        <span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">50$</span>
+        <span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">45$</span></h6>
+        <p class="card-text d-none para">Pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.</p>
+        <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Drinks" style="width: 18rem;">
+    <img src="./Images/soda-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="cold drink"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Soda</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">12$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">10$</span></h6>
+      <p class="card-text d-none para">Today, you can get a refreshing, sweet fizzy drink almost anywhere — in a fast food joint, on the street, or even on a plane. But that wasn't always the case: In the early days of soda, you could only get it at pharmacies. In the United States, soda pop can be traced back to the Victorian-era practice of selling patent medicines. In fact, early sodas were technically carbonated medicinal tonics.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Clothes" style="width: 18rem;">
+    <img src="./Images/cloth2-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="green Sweet Shirt"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Green Sweet Shirt</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">70$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">65$</span></h6>
+      <p class="card-text d-none para">This T-shirt is a unique design and one of the best Swedish products in the field of clothing and fashion</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Foods" style="width: 18rem;">
+    <img src="./Images/pasta-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="pasta"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Pasta</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">60$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">55$</span></h6>
+      <p class="card-text d-none para">Pasta is an integral part of Italy’s food history. Wherever Italians immigrated they have brought their pasta along, so much so today it can be considered a staple of international cuisine. Unlike other ubiquitous Italian products like pizza and tomato sauce, which have a fairly recent history, pasta may have a much older pedigree, going back hundreds -if not thousands- of years. Unraveling the long and often complex history of this dish we have to look at its origins and some of the myths surrounding it.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Foods" style="width: 18rem;">
+    <img src="./Images/koshari-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="koshari"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Koshari</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">25$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">19$</span></h6>
+      <p class="card-text d-none para">Koshari is one of the most popular dishes in the land of the Pharaohs, a delicious vegan combination prepared with chickpeas, lentils, macaroni and rice.Egyptian koshari is also called koshari abu gibba. The full name can be explained by the presence, in the recipe, of black lentils, also called ads abu gibba.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Drinks" style="width: 18rem;">
+    <img src="./Images/coffee-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="coffee"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Coffee</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">19$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">16$</span></h6>
+      <p class="card-text d-none para">Coffee, beverage brewed from the roasted and ground seeds of the tropical evergreen coffee plants of African origin. Coffee is one of the three most popular beverages in the world (alongside water and tea) and one of the most profitable international commodities. Though coffee is the basis for an endless array of beverages, including espresso, cappuccinos, mochas, and lattes, its popularity is mainly attributed to its invigorating effect, which is produced by caffeine, an alkaloid present in coffee.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Clothes" style="width: 18rem;">
+    <img src="./Images/cloth4-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="Black Shirt"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Black Shirt</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">50$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">45$</span></h6>
+      <p class="card-text d-none para">This T-shirt is a unique design and one of the best Italian products in the field of clothing and modern fashion.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Foods" style="width: 18rem;">
+    <img src="./Images/gnocchi-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="gnocchi"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Gnocchi</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">28$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">25$</span></h6>
+      <p class="card-text d-none para">Gnocchi (pronounced NYOW-kee) are an Italian pasta, the most common of which is classic potato gnocchi (Gnocchi di patate). They are made of cooked mashed potatoes, flour and eggs. Some gnocchi recipes add ricotta to the dough. "Gnocchi" is the plural for "gnoccho," (which you rarely hear, perhaps because who can eat just one?).</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Clothes" style="width: 18rem;">
+    <img src="./Images/cloth5-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="White-Black Hodie"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">White-Black Hodie</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">95$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">80$</span></h6>
+      <p class="card-text d-none para">This T-shirt is a unique design and one of the best Spanish products in the field of clothing and modern fashion.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Drinks" style="width: 18rem;">
+    <img src="./Images/tea-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="tea"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Cup of Tea</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">11$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">10$</span></h6>
+      <p class="card-text d-none para">tea is a beverage created by infusing hot water with the dried leaves of the Camellia sinensis plant. However, tea has a history as rich and diverse as the leaves it's brewed from. Legend has it that tea was first discovered when a solitary leaf from the Camellia sinensis plant fortuitously found its way into the cup of a Chinese Emperor. Until the 1800s, China exclusively cultivated and manufactured the majority of the world's tea. Throughout time, tea cultivation has expanded across regions and is now harvested in 40 different countries, with the most significant production stemming from China, Kenya, Sri Lanka, India, and Turkey</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Foods" style="width: 18rem;">
+    <img src="./Images/Lasagne-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="lasagne"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Lasagne</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">75$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">70$</span></h6>
+      <p class="card-text d-none para">Lasagna, pasta dish of Italian origin, made with broad often ruffled noodles and a tomato or white sauce.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Drinks" style="width: 18rem;">
+    <img src="./Images/Hugo_Spritz-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="Hugo Spritz"style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Hugo Spritz</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">24$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">22$</span></h6>
+      <p class="card-text d-none para">The Hugo Spritz is an effervescent cocktail that combines prosecco, elderflower liqueur, seltzer, lime, and mint.  Its flavor is delicate and refreshing making it the perfect aperitivo to any meal.</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+
+  <div class="card carddiv" data-category="Clothes" style="width: 18rem;">
+    <img src="./Images/cloth3-removebg-preview.png" class="card-img-top fa-beat cardimages" alt="Dark Hodie" style="--fa-animation-duration: 3.5s;">
+    <div class="card-body text-center cardcontent">
+      <h5 class="card-title">Dark Hodie</h5>
+      <h6 class="card-title price"><span style="text-decoration-line: line-through; color:red;margin-right: 15px;" class="oldprice">150$</span><span style="color:green;font-size: larger;--fa-animation-duration: 2s;"class="fa-fade newprice">135$</span></h6>
+      <p class="card-text d-none para">This T-shirt is a unique design and one of the best Egyptian products in the field of clothing and modern fashion</p>
+      <a href="#" class="btn btn-outline-success d-flex w-50 my-4 mx-auto  showdetailsbtn">Show Details</a>
+      <a href="#" class="btn btn-outline-success d-flex w-50 mx-auto add">Add To Cart
+        <i class="fa-solid fa-cart-shopping my-auto fs-4 fa-shake" style="color:#030637;"></i>
+
+      </a>
+    </div>
+  </div>
+</div>
+<!-- End Of Cards Section -->
+
+<!-- Start Of Footer -->
+<footer
+          class="text-center text-lg-start text-white"
+          style="background-color: #030637;height: fit-content;"
+          >
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-md-center mb-xs-4">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              Mercato
+            </h6>
+            <img src="./Images/mercato-Logo.png" class="aboutimage2 w-lg-100 fa-flip"style="--fa-animation-duration: 3.5s;">
+          </div>
+          <!-- Grid column -->
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto me-2 mt-3 text-md-center">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Benha, Qalyoubia, EGY</p>
+            <p><i class="fas fa-envelope mr-3"></i> Mercato@shop.com</p>
+            <p><i class="fa-brands fa-x-twitter mr-3"></i> Mercato_99</p>
+            <p><i class="fas fa-phone mr-3 fa-shake"></i> 01122913175</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-3">
+
+      <!-- Section: Copyright -->
+      <section class="p-3 pt-0">
+        <div class="row d-flex align-items-center">
+          <!-- Grid column -->
+          <div class="col-md-7 col-lg-8 text-center text-md-start">
+            <!-- Copyright -->
+            <div class="p-3">
+              © 2024 Copyright:
+              <a class="text-white" href="https://KetabBookStore.com/">
+                MercatoStore.com
+              </a>
+            </div>
+            <!-- Copyright -->
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+            <!-- Facebook -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-facebook-f fa-bounce"></i
+              ></a>
+
+            <!-- Twitter -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-x-twitter fa-bounce"></i
+              ></a>
+
+            <!-- Google -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-google fa-bounce"></i
+              ></a>
+
+            <!-- Instagram -->
+            <a
+               class="btn btn-outline-light btn-floating m-1"
+               class="text-white"
+               role="button"
+               ><i class="fab fa-instagram fa-bounce"></i
+              ></a>
+
+              <a
+              class="btn btn-floating m-3" href="#">
+                <i class="fa-regular fa-circle-up fa-beat-fade fs-1" style="color: #d53f6c;"></i>
+              </a>
+          </div>
+          <!-- Grid column -->
+        </div>
+      </section>
+      <!-- Section: Copyright -->
+    </div>
+    <!-- Grid container -->
+  </footer>
+  <!-- Footer -->
+<!-- </div> -->
+<!-- End of .container -->
+<!-- End Of Footer -->
+
+
+<script src="./bootstrap.bundle.js"></script>   
+<script src="./main.js"></script>
+
+</body>
+</html>

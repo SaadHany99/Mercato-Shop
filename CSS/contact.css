@@ -1,0 +1,120 @@
+body{
+    background-color: #eeceda;
+}
+nav{
+    background-color: #030637;
+    border-radius: 10px;
+    
+}
+li:hover{
+background-color: rgb(238, 163, 157);
+border-radius: 50px;
+}
+.logoimage{
+    width: 100px;
+    height: 100px;
+}
+/* Form */
+
+.main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media (min-width:768px) {
+    .main{
+        flex-direction: row;
+    }
+    
+}
+.main .left{
+    /* flex-basis: 30%; */
+    width: 400px;
+    padding: 20px;
+    border-radius: 3px;
+    background-color: #030637;
+}
+.main .left .form{
+    padding: 10px;
+}
+.main .left .form h2{
+    color: white;
+    padding-top: 20px;
+}
+.main .left .form input{
+    display: block;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+}
+.main .left .form input:last-of-type{
+    padding: 20px;
+}
+
+.main .left .form .btnSubmit{
+    background-color: rgb(238, 163, 157);
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 37px;
+    border-radius: 3px;
+    color: white;
+}
+.main .left .form span{
+    color: red;
+    position: relative;
+    top: -10px;
+    display: none;
+}
+.suc{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    /* display: none; */
+    opacity: 0;
+    transition: opacity 2s ease;
+
+}
+
+/* footer */
+.aboutimage2 {
+    width: 270px;
+    height: 270px;
+  }
+
+  /* button */
+
+/* CSS */
+.btnSubmit {
+  background: linear-gradient(to bottom right, #EF4765, #FF9A5A);
+  border: 0;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2.5;
+  outline: transparent;
+  padding: 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+.btnSubmit:not([disabled]):hover {
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
+}

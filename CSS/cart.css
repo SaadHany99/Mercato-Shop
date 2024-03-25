@@ -1,0 +1,37 @@
+nav{
+    background-color: #030637;
+    border-radius: 10px;
+    
+}
+li:hover{
+background-color: rgb(238, 163, 157);
+border-radius: 50px;
+}
+.logoimage{
+    width: 100px;
+    height: 100px;
+}
+
+/* card */
+.cardimages
+{
+    height: 250px;
+    border-radius: 5%;
+}
+.incart
+{
+    background-color: #FAE7F3;
+}
+
+.carddiv
+{
+    background-color: #F5EEE6;
+    border-radius: 20%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(4, 92, 36, 0.19);
+}
+
+/* footer */
+.aboutimage2 {
+    width: 270px;
+    height: 270px;
+  }
